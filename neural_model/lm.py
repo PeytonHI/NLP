@@ -136,30 +136,6 @@ class Book(Dataset):
         return self.data[idx]
 
 
-def load_data():
-    base_dir = Path(__file__).parent 
-    sherlock_data_path = base_dir / "data" / "SH-TTC" / "sherlock.txt"
-    sherlock_text_list = []
-    with open(sherlock_data_path, "r", encoding='UTF-8') as sherlock_file:
-        sherlock_text = sherlock_file.read().strip()
-        paragraphs = re.split(r'\n{2,}', sherlock_text)  # we assume paragraphs are separated by two newlines
-        for paragraph in paragraphs:
-            sherlock_text_list.append('<p>')
-            sherlock_text_list.append(paragraph.strip())  # Strip leading/trailing whitespace
-            sherlock_text_list.append('</p>')
-
-    ttc_text_list = []
-    ttc_data_path = base_dir / "data" / "SH-TTC" / "ttc.txt"
-    with open(ttc_data_path, "r", encoding='UTF-8') as ttc_file:
-        ttc_text = ttc_file.read().strip()
-        paragraphs = re.split(r'\n{2,}', ttc_text)
-        for paragraph in paragraphs:
-            ttc_text_list.append('<p>')
-            ttc_text_list.append(paragraph.strip())  # Strip leading/trailing whitespace
-            ttc_text_list.append('</p>')
-
-    return sherlock_text_list, ttc_text_list
-
 def train(model, train_data, val_data):
     # raise NotImplementedError()
     # setup the training
@@ -243,6 +219,29 @@ def sample_predictions(preds, dev_data_raw, vocab):
 
 def build_ngrams(tokens, n):
     return [tokens[i: i + n] for i in range(len(tokens) - n + 1)]
+
+
+def load_data():
+    base_dir = Path(__file__).parent 
+    sherlock_data_path = base_dir / "data" / "SH-TTC" / "sherlock.txt"
+    sherlock_tokens_list = []
+    with open(sherlock_data_path, "r", encoding='UTF-8') as sherlock_file:
+        sherlock_text = sherlock_file.read().strip()
+        paragraphs = re.split(r'\n{2,}', sherlock_text) # paragraphs are separated by two newlines and we want paragraphs for more context
+        for paragraph in paragraphs:
+            sherlock_tokens = tokenize(paragraph).strip()
+            sherlock_tokens_list.append(sherlock_tokens)
+
+    ttc_tokens_list = []
+    ttc_data_path = base_dir / "data" / "SH-TTC" / "ttc.txt"
+    with open(ttc_data_path, "r", encoding='UTF-8') as ttc_file:
+        ttc_text = ttc_file.read().strip()
+        paragraphs = re.split(r'\n{2,}', ttc_text)
+        for paragraph in paragraphs:
+            ttc_tokens = tokenize(paragraph).strip()
+            ttc_tokens_list.append(ttc_tokens)
+
+    return sherlock_tokens_list, ttc_tokens_list
 
 
 def tokenize(text):
