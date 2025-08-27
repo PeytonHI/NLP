@@ -1,0 +1,182 @@
+# he wahine ʻoe
+1	he	_	AUX	_	_	_	_	_	_
+2	wahine	_	NOUN	_	_	_	_	_	_
+3	ʻoe	_	PRON	_	_	_	_	_	_
+
+# he Hawaiʻi ʻoe
+1	he	_	AUX	_	_	_	_	_	_
+2	Hawaiʻi	_	NOUN	_	_	_	_	_	_
+3	ʻoe	_	PRON	_	_	_	_	_	_
+
+# he haole ʻoe
+1	he	_	AUX	_	_	_	_	_	_
+2	haole	_	NOUN	_	_	_	_	_	_
+3	ʻoe	_	PRON	_	_	_	_	_	_
+
+# he haumana ʻoe
+1	he	_	AUX	_	_	_	_	_	_
+2	haumana	_	NOUN	_	_	_	_	_	_
+3	ʻoe	_	PRON	_	_	_	_	_	_
+
+# he aliʻi maikaʻi ʻoe
+1	he	_	AUX	_	_	_	_	_	_
+2	aliʻi	_	NOUN	_	_	_	_	_	_
+3	maikaʻi	_	ADJ	_	_	_	_	_	_
+4	ʻoe	_	PRON	_	_	_	_	_	_
+
+
+# he noho kēlā
+1	he	_	AUX	_	_	_	_	_	_
+2	noho	_	NOUN	_	_	_	_	_	_
+3	kēlā	_	DET	_	_	_	_	_	_
+
+# he ʻāina kēlā
+1	he	_	AUX	_	_	_	_	_	_
+2	ʻāina	_	NOUN	_	_	_	_	_	_
+3	kēlā	_	DET	_	_	_	_	_	_
+
+# he ʻōlelo kēlā
+1	he	_	AUX	_	_	_	_	_	_
+2	ʻōlelo	_	NOUN	_	_	_	_	_	_
+3	kēlā	_	DET	_	_	_	_	_	_
+
+# he kanaka kēlā
+1	he	_	AUX	_	_	_	_	_	_
+2	kanaka	_	NOUN	_	_	_	_	_	_
+3	kēlā	_	DET	_	_	_	_	_	_
+
+# he puke hou kēlā
+1	he	_	AUX	_	_	_	_	_	_
+2	puke	_	NOUN	_	_	_	_	_	_
+3	hou	_	ADJ	_	_	_	_	_	_
+4	kēlā	_	DET	_	_	_	_	_	_
+
+
+# he wahine au
+1	he	_	AUX	_	_	_	_	_	_
+2	wahine	_	NOUN	_	_	_	_	_	_
+3	au	_	PRON	_	_	_	_	_	_
+
+# he haumana au
+1	he	_	AUX	_	_	_	_	_	_
+2	haumana	_	NOUN	_	_	_	_	_	_
+3	au	_	PRON	_	_	_	_	_	_
+
+# he Hawaiʻi au
+1	he	_	AUX	_	_	_	_	_	_
+2	Hawaiʻi	_	NOUN	_	_	_	_	_	_
+3	au	_	PRON	_	_	_	_	_	_
+
+# he pepa kēnā
+1	he	_	AUX	_	_	_	_	_	_
+2	pepa	_	NOUN	_	_	_	_	_	_
+3	kēnā	_	DET	_	_	_	_	_	_
+
+# he noho nui kēnā
+1	he	_	AUX	_	_	_	_	_	_
+2	noho	_	NOUN	_	_	_	_	_	_
+3	nui	_	ADJ	_	_	_	_	_	_
+4	kēnā	_	PRON	_	_	_	_	_	_
+
+
+# he noho ʻoluʻolu keia
+1	he	_	AUX	_	_	_	_	_	_
+2	noho	_	NOUN	_	_	_	_	_	_
+3	ʻoluʻolu	_	ADJ	_	_	_	_	_	_
+4	keia	_	DET	_	_	_	_	_	_
+
+# he hula maikaʻi keia
+1	he	_	AUX	_	_	_	_	_	_
+2	hula	_	NOUN	_	_	_	_	_	_
+3	maikaʻi	_	ADJ	_	_	_	_	_	_
+4	keia	_	DET	_	_	_	_	_	_
+
+# he kanaka maikaʻi keia
+1	he	_	AUX	_	_	_	_	_	_
+2	kanaka	_	NOUN	_	_	_	_	_	_
+3	maikaʻi	_	ADJ	_	_	_	_	_	_
+4	keia	_	DET	_	_	_	_	_	_
+
+# he ʻai ʻono kēlā
+1	he	_	AUX	_	_	_	_	_	_
+2	ʻai	_	NOUN	_	_	_	_	_	_
+3	ʻono	_	ADJ	_	_	_	_	_	_
+4	kēlā	_	DET	_	_	_	_	_	_
+
+# he kuleana hou kēlā
+1	he	_	AUX	_	_	_	_	_	_
+2	kuleana	_	NOUN	_	_	_	_	_	_
+3	hou	_	ADJ	_	_	_	_	_	_
+4	kēlā	_	DET	_	_	_	_	_	_
+
+
+# ʻehā aliʻi
+1	ʻehā	_	NUM	_	_	_	_	_	_
+2	aliʻi	_	NOUN	_	_	_	_	_	_
+
+# ʻekolu papaʻeleʻele
+1	ʻekolu	_	NUM	_	_	_	_	_	_
+2	papaʻeleʻele	_	NOUN	_	_	_	_	_	_
+
+# ʻelua wahi
+1	ʻelua	_	NUM	_	_	_	_	_	_
+2	wahi	_	NOUN	_	_	_	_	_	_
+
+# hoʻokahi penikala
+1	hoʻokahi	_	NUM	_	_	_	_	_	_
+2	penikala	_	NOUN	_	_	_	_	_	_
+
+# ʻewalu puke
+1	ʻewalu	_	NUM	_	_	_	_	_	_
+2	puke	_	NOUN	_	_	_	_	_	_
+
+
+# ʻeiwa noho ʻoluʻolu
+1	ʻeiwa	_	NUM	_	_	_	_	_	_
+2	noho	_	NOUN	_	_	_	_	_	_
+2	ʻoluʻolu	_	ADJ	_	_	_	_	_	_
+
+# ʻumi kāmaʻa
+1	ʻumi	_	NUM	_	_	_	_	_	_
+2	kāmaʻa	_	NOUN	_	_	_	_	_	_
+
+# ʻeono kumu
+1	ʻeono	_	NUM	_	_	_	_	_	_
+2	kumu	_	NOUN	_	_	_	_	_	_
+
+# ʻehā lole
+1	ʻehā	_	NUM	_	_	_	_	_	_
+2	lole	_	NOUN	_	_	_	_	_	_
+
+# ʻekahi, ʻelua, ʻekolu
+1	ʻekahi	_	NUM	_	_	_	_	_	_
+2	,	_	PUNCT	_	_	_	_	_	_
+3	ʻelua	_	NUM	_	_	_	_	_	_
+4	,	_	PUNCT	_	_	_	_	_	_
+5	ʻekolu	_	NUM	_	_	_	_	_	_
+
+
+# ʻelua haumana akamai
+1	ʻelua	_	NUM	_	_	_	_	_	_
+2	haumana	_	NOUN	_	_	_	_	_	_
+3	akamai	_	ADJ	_	_	_	_	_	_
+
+# ʻehiku poʻe Kepanī
+1	ʻehiku	_	NUM	_	_	_	_	_	_
+2	poʻe	_	NOUN	_	_	_	_	_	_
+3	Kepanī	_	ADJ	_	_	_	_	_	_
+
+# ʻekolu poʻe Pākē
+1	ʻekolu	_	NUM	_	_	_	_	_	_
+2	poʻe	_	NOUN	_	_	_	_	_	_
+3	Pākē	_	ADJ	_	_	_	_	_	_
+
+# ʻelima hale nui
+1	ʻelima	_	NUM	_	_	_	_	_	_
+2	hale	_	NOUN	_	_	_	_	_	_
+3	nui	_	ADJ	_	_	_	_	_	_
+
+# ʻelima hale hou
+1	ʻelima	_	NUM	_	_	_	_	_	_
+2	hale	_	NOUN	_	_	_	_	_	_
+3	hou	_	ADJ	_	_	_	_	_	_
