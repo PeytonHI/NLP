@@ -44,10 +44,10 @@ Python 3.10.16
 tokenizers
 
 # Repository Structure:
-├─ nlp/ # General NLP utilities/modules
+├─ nlp/
 ├─ ..
 │
-├─  ngram_lm_nb/ # N-gram Language Model & Naive Bayes experiments
-├─ run_lm.py # Script to train/test n-gram language model
-├─ run_naivebayes.py # Script to train/test Naive Bayes classifier
-└─ data/ # Dataset files used for experiments
+├─  ngram_lm_nb
+├─ run_lm.py 
+├─ run_naivebayes.py
+└─ data/
