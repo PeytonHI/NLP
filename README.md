@@ -1,4 +1,7 @@
+This is not updated fully.. only ngram_lm_nb is.
+
 Author: Peyton Taylor
+
 Natural Language Processing Course @ UH Hilo
 
 NLP Projects – UH Hilo
