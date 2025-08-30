@@ -48,7 +48,6 @@ tokenizers
   <summary><strong>Expand here..</strong></summary>
 
   <pre>
-repo-root/
 ├─ nlp/
 │  └─ ...
 └─ ngram_lm_nb/
