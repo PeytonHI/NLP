@@ -224,38 +224,42 @@ def build_ngrams(tokens, n):
 def load_data():
     base_dir = Path(__file__).parent 
     sherlock_data_path = base_dir / "data" / "SH-TTC" / "sherlock.txt"
-    sherlock_tokens_list = []
+    # sherlock_tokens_list = []
     with open(sherlock_data_path, "r", encoding='UTF-8') as sherlock_file:
         sherlock_text = sherlock_file.read().strip()
-        paragraphs = re.split(r'\n{2,}', sherlock_text) # paragraphs are separated by two newlines and we want paragraphs for more context
-        for paragraph in paragraphs:
-            sherlock_tokens = tokenize(paragraph).strip()
-            sherlock_tokens_list.append(sherlock_tokens)
+        # paragraphs = re.split(r'\n{2,}', sherlock_text) # paragraphs are separated by two newlines and we want paragraphs for more context
+        # for paragraph in paragraphs:
+            # sherlock_tokens = tokenize(sherlock_text).strip()
+            # sherlock_tokens_list.append(sherlock_tokens)
+        # sherlock_tokens_list = tokenize(sherlock_text)
 
-    ttc_tokens_list = []
+    # ttc_tokens_list = []
     ttc_data_path = base_dir / "data" / "SH-TTC" / "ttc.txt"
     with open(ttc_data_path, "r", encoding='UTF-8') as ttc_file:
         ttc_text = ttc_file.read().strip()
-        paragraphs = re.split(r'\n{2,}', ttc_text)
-        for paragraph in paragraphs:
-            ttc_tokens = tokenize(paragraph).strip()
-            ttc_tokens_list.append(ttc_tokens)
+        # paragraphs = re.split(r'\n{2,}', ttc_text)
+        # for paragraph in paragraphs:
+        #     ttc_tokens = tokenize(paragraph).strip()
+        #     ttc_tokens_list.append(ttc_tokens)
+        # ttc_tokens_list = tokenize(ttc_text)
 
-    return sherlock_tokens_list, ttc_tokens_list
+    return (sherlock_text, ttc_text)
 
 
 def tokenize(text):
-    tokenizer = Tokenizer.from_pretrained("bert-base-cased")
-    encoding = tokenizer.encode(text)
-    tokens = encoding.tokens
+    # tokenizer = Tokenizer.from_pretrained("bert-base-cased")
+    # encoding = tokenizer.encode(text)
+    # tokens = encoding.tokens
+
+    tokens = text.split()
     return tokens
 
 
 def main():
 
-    sherlock_text, ttc_tokens = load_data()
+    sherlock_text, ttc_text = load_data()
     sherlock_tokens = tokenize(sherlock_text)
-    ttc_tokens = tokenize(ttc_tokens)
+    ttc_tokens = tokenize(ttc_text)
     # print(train_data_raw[:5])
     # print(val_data_raw[:5])
 
@@ -263,14 +267,15 @@ def main():
     # label_vocab = labelVocab(sherlock_tokens)
     n = 4
     ngrams_list = build_ngrams(sherlock_tokens, n)
+
     # split the data into train and dev
     # train_part = int(len(sherlock_tokens) * 0.8)
     train_data = Book(sherlock_tokens, ngrams_list, vocab)
     val_data = Book(ttc_tokens, ngrams_list, vocab)
     
-    train_data[0]
-    torch.nn.functional.one_hot(torch.LongTensor([5]), 10)
-    torch.argmax(train_data[1][1])
+    # train_data[0]
+    # torch.nn.functional.one_hot(torch.LongTensor([5]), 10)
+    # torch.argmax(train_data[1][1])
     # vocab.to_tok(5167)
 
     train_dataloader = DataLoader(train_data, batch_size=4, shuffle=True)
@@ -309,7 +314,7 @@ def main():
     recall = evaluate.load("recall")
     accuracy = evaluate.load("accuracy")
 
-    sample_predictions(preds, val_data, label_vocab)
+    sample_predictions(preds, val_data, vocab)
 
     input(" ------- Press Any key to continue ------- ")
 
