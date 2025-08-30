@@ -44,8 +44,8 @@ Python 3.10.16
 tokenizers
 
 # Repository Structure:
-nlp/
-ngram_lm_nb/run_lm.py
-ngram_lm_nb/run_naivebayes.py
-ngram_lm_nb/data/
+nlp/..
+..ngram_lm_nb/run_lm.py
+..ngram_lm_nb/run_naivebayes.py
+..ngram_lm_nb/data/
 ...
