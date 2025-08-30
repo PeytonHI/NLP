@@ -43,11 +43,16 @@ Python 3.10.16
 # Required libraries (can install with pip install -r requirements.txt)::
 tokenizers
 
-# Repository Structure:
+<details>
+  <summary><strong>Repository Structure</strong></summary>
+
+  <pre>
+repo-root/
 ├─ nlp/
-├─ ..
-│
-├─  ngram_lm_nb
-├─ run_lm.py 
-├─ run_naivebayes.py
-└─ data/
+│  └─ ...
+└─ ngram_lm_nb/
+   ├─ run_lm.py
+   ├─ run_naivebayes.py
+   └─ data/
+  </pre>
+</details>
