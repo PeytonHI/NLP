@@ -1,4 +1,4 @@
-This is not updated fully.. only ngram_lm_nb is. I've included a simple NLP paper I wrote for my NLP class (not published) in the main directory called final_project.pdf.
+This is not updated fully.. only ngram_lm_nb is. I've included a simple NLP paper I wrote for my NLP class (not published) in the main directory called final_project.pdf. Code viewable under final.
 
 Author: Peyton Taylor
 
